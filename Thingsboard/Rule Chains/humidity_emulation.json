@@ -1,0 +1,568 @@
+{
+  "ruleChain": {
+    "additionalInfo": {
+      "description": ""
+    },
+    "name": "Humidity emulation",
+    "type": "CORE",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null,
+    "externalId": null
+  },
+  "metadata": {
+    "firstNodeIndex": null,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 223,
+          "layoutY": 52
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "65932170-f004-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 485,
+          "layoutY": 53
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 225,
+          "layoutY": 105
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "00d38990-eff6-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 235,
+          "layoutY": 155
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "5a7149b0-f005-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 229,
+          "layoutY": 208
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "ffa26950-f005-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 231,
+          "layoutY": 260
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "dae109b0-f004-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 234,
+          "layoutY": 310
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "4a8ae1d0-f002-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 237,
+          "layoutY": 360
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "e51fad60-f003-11ed-8a14-d3c9beac3558",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 481,
+          "layoutY": 104
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 480,
+          "layoutY": 154
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 478,
+          "layoutY": 212
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 476,
+          "layoutY": 265
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 476,
+          "layoutY": 317
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 476,
+          "layoutY": 366
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 676,
+          "layoutY": 54
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "d8040930-f04b-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 938,
+          "layoutY": 55
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 678,
+          "layoutY": 107
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "e61047f0-f050-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 688,
+          "layoutY": 157
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "70434f30-f051-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 682,
+          "layoutY": 210
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "82378fd0-f051-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 684,
+          "layoutY": 262
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "88f4df80-f051-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 687,
+          "layoutY": 312
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "9084c170-f051-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 690,
+          "layoutY": 362
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Humidity generator",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 10,
+          "scriptLang": "TBEL",
+          "jsScript": "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "tbelScript": "var humidity = Math.floor((Math.random()*60+450)*10)/100;\nvar msg = { humidity: humidity };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "9aa168c0-f051-11ed-84cf-6f43dce0bd89",
+          "originatorType": "DEVICE"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 934,
+          "layoutY": 106
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 933,
+          "layoutY": 156
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 931,
+          "layoutY": 214
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 929,
+          "layoutY": 267
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 929,
+          "layoutY": 319
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 929,
+          "layoutY": 368
+        },
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Root rule",
+        "debugMode": false,
+        "configuration": {
+          "ruleChainId": "14a8ae80-c35c-11ed-92b1-2bc39b442020"
+        },
+        "externalId": null
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 9,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 10,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 11,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 6,
+        "toIndex": 12,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 7,
+        "toIndex": 13,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 14,
+        "toIndex": 15,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 16,
+        "toIndex": 22,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 17,
+        "toIndex": 23,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 18,
+        "toIndex": 24,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 19,
+        "toIndex": 25,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 20,
+        "toIndex": 26,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 21,
+        "toIndex": 27,
+        "type": "Success"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}
