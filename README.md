@@ -7,4 +7,3 @@ Also, we need to determine the appropriate network fault handling mechanisms to 
 ## Contributors of the project :
 * [Zannis Vidalis](https://github.com/ZannisVidalis)
 * [Eleni Feslian](https://github.com/sdi2000204)
-* [Vicky Christofilopoulou]( https://github.com/Vicky-Christofilopoulou )
