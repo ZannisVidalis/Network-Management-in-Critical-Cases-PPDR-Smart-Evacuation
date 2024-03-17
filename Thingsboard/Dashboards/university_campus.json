@@ -89,7 +89,7 @@
           "padding": "8px",
           "settings": {
             "provider": "openstreet-map",
-            "gmApiKey": "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+            "gmApiKey": "",
             "gmDefaultMapType": "roadmap",
             "mapProvider": "OpenStreetMap.Mapnik",
             "useCustomProvider": false,
