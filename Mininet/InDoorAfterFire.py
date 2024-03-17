@@ -11,7 +11,7 @@ def myNetwork():
     
     net = Mininet_wifi(topo=None, build=False, link=wmediumd, wmediumd_mode=interference, ipBase='10.0.0.0/8')
 
-    info('*** Adding controller\n')
+    info('*** Adding controller\n') 
     info('*** Add switches/APs\n')
     #IS DESTROYED#ap1 = net.addAccessPoint('ap1', cls=OVSKernelAP, ssid='ap1-ssid', channel='1', mode='g', position='0,0,0', range=8.75)
     ap2 = net.addAccessPoint('ap2', cls=OVSKernelAP, ssid='ap2-ssid', channel='1', mode='g', position='9.5,5,0', range=12)
