@@ -2,7 +2,7 @@
   "ruleChain": {
     "additionalInfo": {
       "description": ""
-    },
+    }, 
     "name": "Create alarm",
     "type": "CORE",
     "firstRuleNodeId": null,
