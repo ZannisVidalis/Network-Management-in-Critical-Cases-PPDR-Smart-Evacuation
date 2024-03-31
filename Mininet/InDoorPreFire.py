@@ -52,6 +52,7 @@ def myNetwork():
 
     info('*** Post configure nodes\n')
 
+    
     CLI(net)
     net.stop()
 
