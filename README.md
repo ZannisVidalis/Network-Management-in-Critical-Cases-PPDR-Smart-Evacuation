@@ -9,4 +9,4 @@ The explanation and the logic of the Mininet code and ThingsBoard are on this pd
 
 ## Contributors of the project :
 * [Zannis Vidalis](https://github.com/ZannisVidalis)
-* [Eleni Feslian](https://github.com/sdi2000204)
+* [Eleni Feslian](https://github.com/EleniFeslian)
